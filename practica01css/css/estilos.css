@@ -34,8 +34,39 @@ header nav ul li{
     margin-right: 20px;
 
 }
+#seccion02 article input[type="submit"]{
+    background: white;
+    border-radius: 5px;
+    color: blue;
+    margin-left: 35%; /*130 px*/
+    
+}∫
 
 #logo{ 
     margin: -150px 0px 0px 0px;
     /* margin-top: -150px; */
+}
+#seccion01{
+    margin-top: 15px;
+}
+#seccion01 article{
+text-align: center;
+}
+#seccion01 article img{
+    border: 5px solid rgba(150, 150, 150, 0.3);
+    width: 98%;
+}
+#seccion02 article{
+    width: 32.8%;
+    vertical-align: top;
+    display: inline-block;
+}
+.nito{
+    font-weight: bold;
+}
+.unaSeccion{
+    font-size: 4.5em;
+}
+.otraSeccion{
+    font-size: 2.5em;
 }
