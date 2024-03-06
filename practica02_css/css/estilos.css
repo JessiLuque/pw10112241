@@ -22,7 +22,6 @@ header nav ul li{
     margin-right: 15px;
     padding-bottom: 2px;
     /* text-decoration: underline; */
-
 }
 #bg_offer{
     position: relative;
@@ -61,6 +60,40 @@ header nav ul li{
     color:#FF0099;
     content: "• ";
 }
+#segundaseccion article{
+    /* border: 1px solid red; */
+    text-align: right;
+    /* margen interno */
+    padding-right: 140px;
+}
+#terceraseccion article{
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+
+}
+#terceraseccion article img{
+    /* alineacion vertical del texto que la rodea */
+    vertical-align: middle;
+}
+#secc03art04{
+    padding-top: 60px;
+}
+footer{
+    background-color: rgb(52, 77, 193);
+    color: white;
+    vertical-align: bottom;
+    display: inline-block;
+} 
+#footer01{
+    width: 40%;
+}
+#footer02{
+    width: 20%;
+}
+#footer03{
+    width: 10%;
+}
 .colorazul{
     color: #4267b3;
 }
@@ -75,4 +108,7 @@ header nav ul li{
 }
 .letragrande{
     font-size: 3.5em;
+}
+.letramediana{
+    font-size: 2em;
 }
