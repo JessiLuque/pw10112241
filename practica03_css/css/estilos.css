@@ -25,18 +25,14 @@ footer img{
     width: 300px;
 }
 header ul{
-    margin-left: -10px;
-    margin-right: -20px;
+    margin-left: -40px;
+    margin-right: -10px;
 }
 header ul li{
-    /* border: 1px solid red; */
     display: inline-block;
-    margin-left: -25px;
     padding: 8px 14px;
     text-align: center;
-    width: 17.9%;
-    /* margin-left: 2px; */
-    /* margin-right: 2%; */
+    width: 16.9%;
 }
 header ul li:nth-child(2){
     background: var(--color-verde);
@@ -80,7 +76,7 @@ section, footer{
     background: var(--fondo-negro);
 }
 section img{
- width: 150px;
+    width: 150px;
 }
 .letra-azul{
     color: var(--color-azul);
