@@ -1,0 +1,49 @@
+html{
+    --color-gris: rgb(107, 107, 107);
+    --color-verde: rgb(36, 241, 36);
+    --color-negro: black;
+}
+body{
+    font-size: 16px; /*1 em*/
+    margin: 0px auto; /*centrado*/
+    max-width: 1024px;
+    border: 1px solid black;
+}
+header{
+    display: inline-block;
+    border: 3px solid red;
+    width: 100%;
+}
+#headerArt01{
+    /* border: 1px solid red; */
+    margin-top: 35px;
+    vertical-align: top;
+    margin-left: 10px;
+    width: 50%;
+}
+#headerArt01 ul{
+    margin-top: 30px;
+    text-align: left;
+    margin-left: -35px;
+}
+#headerArt01 ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+#headerSecc01 img{
+    width: 30px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+#go_to_shop{
+    position: relative;
+    left: 700px;
+    bottom: 135px;
+}
+#buy{
+    position: relative;
+    left: 400px;
+    bottom: 80px;
+}
