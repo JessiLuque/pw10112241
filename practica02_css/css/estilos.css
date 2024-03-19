@@ -4,6 +4,19 @@ body{
     max-width: 1078px;
     min-width: 1078px;
 }
+footer{
+    background-color: rgb(57, 75, 159);
+    color: white;
+    margin-top: 50px;
+} 
+footer section article{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    vertical-align: bottom;
+    line-height: 1.5;
+}
 header input{
     float: right;
     margin-right: -200px;
@@ -12,7 +25,6 @@ header input{
 }
 header nav{
     margin-left: 220px;
-    /* border: 1px solid red; */
 }
 header nav ul li{
     border-bottom: 1px solid gray;
@@ -24,19 +36,40 @@ header nav ul li{
     /* text-decoration: underline; */
 }
 #bg_offer{
+    left: -35px;
     position: relative;
     top: -410px;
-    left: -35px;
+}
+#facebook{
+    left: 76%;
+    position: relative;
+    top: -50px; 
+}
+#footer01{
+    text-align: center;
+    width: 40%;
+}
+#footer02{
+    text-align: center;
+    width: 20%;
+}
+#footer03{
+    margin-left: 33px;
+    width: 10%;
 }
 #granthams{
     margin-left: 25px;
     margin-top: 25px;
 }
+#monitos{
+    left: 80%;
+    position: relative;
+    top: -70px;
+}
 #paint{
     float: right;
 }
 #primerseccion{
-    /* border: 1px solid blue; */
     height: 318px;
     margin-top: 60px;
 }
@@ -46,53 +79,50 @@ header nav ul li{
 }
 #secc01art01{
     width: 61%;
-    /* border: 1px solid red ; */
 }
 #secc01art02{
+    margin-left: 20px;
     width: 31%;
-    margin-left: 50px;
-    /* border: 1px solid red ; */
 }
 #secc01art02 ul{
+    line-height: 1.4;
+}
+#secc01art02 ul li{
     list-style: none;
+    margin-left: -20px;
 }
 #secc01art02 ul li:before{
     color:#FF0099;
     content: "• ";
 }
+#secc03art04{
+    padding-top: 60px;
+}
 #segundaseccion article{
-    /* border: 1px solid red; */
-    text-align: right;
     /* margen interno */
     padding-right: 140px;
+    text-align: right;
 }
 #terceraseccion article{
     display: inline-block;
+    padding-right: 10px;
     vertical-align: top;
     width: 23%;
-
 }
 #terceraseccion article img{
     /* alineacion vertical del texto que la rodea */
     vertical-align: middle;
 }
-#secc03art04{
-    padding-top: 60px;
+#twitter{
+    left: 77%;
+    position: relative;
+    top: -50px;
 }
-footer{
-    background-color: rgb(52, 77, 193);
-    color: white;
-    vertical-align: bottom;
-    display: inline-block;
-} 
-#footer01{
-    width: 40%;
-}
-#footer02{
-    width: 20%;
-}
-#footer03{
-    width: 10%;
+.botonValid{
+    background-color:transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;  
 }
 .colorazul{
     color: #4267b3;
@@ -103,6 +133,12 @@ footer{
 .colorverde{
     color: #8BC500;
 }
+.email{
+    height: 20px;
+}
+.interlineadoChico{
+    line-height: 0.7;
+}
 .nito{
     font-weight: bold;
 }
@@ -112,3 +148,13 @@ footer{
 .letramediana{
     font-size: 2em;
 }
+.miBoton{
+    background-color: #8BC500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 28px;
+}
+
+
+
