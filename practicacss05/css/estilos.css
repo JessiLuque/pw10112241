@@ -1,0 +1,64 @@
+html{
+    --color-azul: rgb(36 93 146);
+    --color-azul-oscuro: rgb(24, 71, 114);
+    --color-gris:rgb(239 239 239);
+}
+body{
+    font-size: 16px; /*1 em*/
+    margin: 0px auto; /*centrado*/
+    max-width: 1024px;
+    border: 1px solid red;
+}
+header{
+    background-color: var(--color-azul);
+}
+header img{
+    width: 200px;
+    margin-left: 412px;
+}
+main{
+    margin-left: 10px;
+}
+#ajustes{
+    height:30px;
+    width: 80px;
+}
+#mainsecc01{
+    margin-top: 60px;
+}
+#mensajes{
+    height: 30px;
+    width: 80px;
+}
+#notificaciones{
+    height: 30px;
+    width: 80px;
+}
+
+#secc01 ul{
+    vertical-align: top;
+    float: right;
+}
+#secc01art01{
+    width: 250px;
+    background-color: var(--color-azul-oscuro);
+    color: white;
+}
+#secc01art01 img{
+    width: 250px;
+}
+#secc01art02-01{
+    background-color: var(--color-azul);
+    color: white;
+}
+#secc01art02{
+    border: 1px solid red;
+    width: 250px;
+}
+#secc01art02 article ul{
+    margin-left: -25px;
+}
+#secc01art02 article ul img{
+    width: 200px;
+}
+
