@@ -1,5 +1,7 @@
 html{
     --color-fondo:#1f2937;
+    --color-azul:hsl(224.84deg 75.61% 48.24%);
+    --color-oscuro:hsl(218.4deg 18.25% 26.86%);
 }
 body{
     font-size: 16px; /*1 em*/
@@ -9,16 +11,20 @@ body{
 footer article{
     margin-top: 50px;
     display: inline-block;
+    width: 30%;
+    margin-right: 10px;
+    margin-left: 14px;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 20px;
 }
 header{
     background-color: var(--color-fondo);
     color: white;
-    /* margin-bottom: 300px; */
 }
 header article{
     display:inline-block;
     margin-left: 70px;
-    width: 30%;
 }
 header article nav ul li{
     display: inline-block;
@@ -31,6 +37,27 @@ header img{
 main{
     background-color: var(--color-fondo);
     text-align: center;
+}
+.boton01{
+    background-color:var(--color-azul) ; 
+}
+.boton02{
+    background-color: var(--color-oscuro);
+}
+.nito{
+    font-weight: bold;
+}
+.letra-grande{
+    font-size: 2em;
+}
+.letra-mediana{
+    font-size: 1.2em;
+}
+.blanca{
+    color: white;
+}
+.gris{
+    color: rgb(178, 176, 176);
 }
 #headerArt02{
     margin-left: 370px;
@@ -45,7 +72,20 @@ main{
 }
 #mainSecc02 article{
     padding-top: 30px;
-    display: inline-block;
+    display: inline-block; 
+    margin-right: 5px;
+}
+#mainSecc02 article button{
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15x;
+    padding-right: 15px;
+    color: white;
+}
+#mainSecc02 img{
+    width: 20px;
+    margin-bottom: -3px;
 }
 #mainSecc03{
     padding-top:30px;
@@ -60,5 +100,9 @@ main{
     padding-top: 230px;
     background-color: white;
     margin-top: 60px;
+}
+#signin{
+    margin-right: -15px;
+    margin-bottom: -6px;
 }
 
