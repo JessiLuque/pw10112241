@@ -1,0 +1,96 @@
+html{
+    --color-rojo: #ff0043;
+}
+body{
+    font-size: 16px; /*1 em*/
+    margin: 0px auto; /*centrado*/
+    max-width: 1024px;
+}
+footer{
+    margin-bottom: 50px;
+}
+footer article{
+    display: inline-block;
+    width: 19%;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+header{
+    margin-left: 30px;
+}
+header article{
+    display: inline-block;
+    margin-right: 110px;
+    vertical-align: middle;
+}
+header article nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+header article button{
+    float: right;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid red;
+    border: solid var(--color-rojo);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.boton01{
+    border: solid var(--color-rojo);
+    background-color: var(--color-rojo);
+    color: white;
+}
+.boton02{
+    background-color:white;
+    color: var(--color-rojo);
+}
+.boton03{
+    border: solid var(--color-rojo);
+    background-color:var(--color-rojo);
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+section input{
+    padding: 10px;
+    border: white;
+}
+#secc01{
+    padding-top: 100px;
+    vertical-align: top;
+    margin-left: 30px;
+}
+#secc01 article{
+    vertical-align: top;
+    display: inline-block;
+}
+#secc01art01{
+width: 55%;
+margin-top: 20px;
+}
+#secc01art02{
+    width: 40%;
+}
+#secc02{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.nito{
+    font-weight: bold;
+}
+.letra-mediana{
+    font-size: 1.6em;
+}
+.letra-grande{
+    font-size: 3em;
+}
+.letra-medio{
+    font-size: 2.5em;
+}
+.godocs{
+    margin-top: 20px;
+}
