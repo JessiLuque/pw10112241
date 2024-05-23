@@ -12,7 +12,7 @@
     "Clientes",
     "Ejemplo"
   ],
-  "author": "PROGRAMACION WEB - Jessica Luque",
+  "author": "PROGRAMACION WEB - David Olivas",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

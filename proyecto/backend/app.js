@@ -19,63 +19,65 @@ let conexion = mysql.createConnection({
 conexion.connect(function (error) {
     if (error) {
         throw error;
-    } else {
+    }else{
         console.log('Conectado a la base de datos');
     }
 });
 
 //rutas de acceso
-app.get("/", function (req, res) {
+app.get("/",function(req,res){
     res.send("Ruta de inicio");
 });
 
 //seleccionamos todos los clientes
-app.get(('/api/clientes'), (req, res) => {
-    conexion.query('SELECT * FROM clientes', (error, filas) => {
+app.get(('/api/clientes'),(req,res)=>{
+    conexion.query('SELECT * FROM clientes', (error,filas)=>{
         if (error) {
             throw error;
-        } else {
+        }else{
             res.send(filas);
         }
     });
 });
 
 //Seleccionamos un cliente en especifico
-app.get('/api/clientes/:id', (req, res) => {
-    conexion.query('SELECT * FROM clientes WHERE id=?', [req.params.id], (error, fila) => {
-        if (error) {
+app.get('/api/clientes/:id', (req,res)=>{
+    conexion.query('SELECT * FROM clientes WHERE id=?', [req.params.id],(error,fila)=>{
+        if(error){
             throw error;
-        } else {
+        }else{
             res.send(fila);
         }
     });
 });
 
-app.delete('/api/clientes/:id', (req, res) => {
-    let id = req.params.id;
-    conexion.query('DELETE FROM clientes WHERE id=?', [id], (error, filas) => {
+
+//Delete
+app.delete('/api/clientes/:id', (req,res)=>{
+    let id=req.params.id;
+    conexion.query('DELETE FROM clientes WHERE id=?',[id],(error,filas)=>{
         if (error) {
             throw error;
-        } else {
+        }else{
             res.send(filas);
         }
     });
 });
 
 //Insertar
-app.post('/api/clientes/', (req, res) => {
+app.post('/api/clientes/',(req,res)=>{
     let data = {
-        id: req.body.id,
-        nombre: req.body.nombre,
-        apellido: req.body.apellido,
-        direccion: req.body.direccion,
-        telefono: req.body.telefono,
-        rfc: req.body.rfc,
-        curp: req.body.curp,
-        cp: req.body.cp
+        id:req.body.id,
+        nombre:req.body.nombre,
+        apellido:req.body.apellido,
+        direccion:req.body.direccion,
+        telefono:req.body.telefono,
+        rfc:req.body.rfc,
+        curp:req.body.curp,
+        cp:req.body.cp
     }
     let sql = "INSERT INTO clientes SET ?";
-    conexion.query(sql, data, (error, resultado) => {
+    conexion.query(sql,data,(error,resultado)=>{
         if (error) {
             throw error;
         } else {
@@ -85,27 +87,28 @@ app.post('/api/clientes/', (req, res) => {
 });
 
 //Actualizar
-app.put('/api/clientes/:id', (req, res) => {
+app.put('/api/clientes/:id',(req,res)=>{
     let id = req.params.id;
-    let nombre = req.body.nombre;
-    let apellido = req.body.apellido;
-    let direccion = req.body.direccion;
-    let telefono = req.body.telefono;
-    let rfc = req.body.rfc;
-    let curp = req.body.curp;
-    let cp = req.body.cp;
-    let sql = "UPDATE Clientes SET nombre=?,apellido=?,direccion=?,telefono=?,rfc=?,curp=?,cp=? WHERE id=?";
-    conexion.query(sql, [nombre, apellido, direccion, telefono, rfc, curp, cp, id], (error, resultado) => {
+    let nombre=req.body.nombre;
+    let apellido=req.body.apellido;
+    let direccion=req.body.direccion;
+    let telefono=req.body.telefono;
+    let rfc=req.body.rfc;
+    let curp=req.body.curp;
+    let cp=req.body.cp;
+    let sql = "UPDATE clientes SET nombre=?,apellido=?,direccion=?,telefono=?,rfc=?,curp=?,cp=? WHERE id=?";
+    conexion.query(sql,[nombre,apellido,direccion,telefono,rfc,curp,cp,id],(error,resultado)=>{
         if (error) {
             throw error;
         } else {
             res.send(resultado);
         }
-    })
+    });
 });
+
 
 //Encender servidor
 let puerto = 3000;
-app.listen(puerto, function () {
+app.listen(puerto, function(){
     console.log("Servidor escuchando puerto " + puerto);
 });
